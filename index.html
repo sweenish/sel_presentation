@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/serif.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>
+					Adam Sweeney
+				</h1>
+			</section>
+			<section>
+				<h2>Purpose</h2>
+				Discuss an ongoing project, how I'm tackling it, and the roadblocks I'm facing
+			</section>
+			<section>
+				<h2>NetApp Terminology</h2>
+				<p>❕ These terms are publicly used</p>
+				<ul>
+					<li>
+						ONTAP: The OS that runs on NetApp hardware, or powers our cloud services like Azure NetApp Files
+					</li>
+					<li>SVM: Secure Virtual Machine</li>
+					<li>SVM migrate: An SVM can be non-disruptively migrated from one cluster to another.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Other Terms</h2>
+				<p>This is terminology I have been taught</p>
+				<ul>
+					<li>Technical Work</li>
+					<ul>
+						<li>Heads and logic</li>
+						<li>Facts, knowledge, expertise</li>
+					</ul>
+					<li>Adaptive Work</li>
+					<ul>
+						<li>Hearts and stomachs</li>
+						<li>Values, loyalties, beliefs</li>
+					</ul>
+				</ul>
+			</section>
+			<section>
+				<h2>Situation</h2>
+				<p class="fragment">An SVM migrate is non-trivial, and it requires that many pre-conditions be met.</p>
+				<p class="fragment">A class executes checks for these pre-conditions.</p>
+				<p class="fragment">Other groups are now adding their own checks to the class.</p>
+				<p class="fragment">The class is... messy.</p>
+				<aside class="notes">
+					<ul>
+						<li>Scaling of certain check groups is also becoming an issue</li>
+						<li>I've lived in the class for a while</li>
+					</ul>
+				</aside>
+			</section>
+			<section>
+				<h2>Task</h2>
+				A refactor is needed.
+			</section>
+			<section>
+				<h2>Action</h2>
+				<ul>
+					<li class="fragment">Brainstorm</li>
+					<li class="fragment">The idea</li>
+					<li class="fragment">Get the ball rolling</li>
+				</ul>
+			</section>
+			<section>
+				<h2>
+					Leadership Competencies
+				</h2>
+				<ul>
+					<li class="fragment">Diagnose Situation</li>
+					<li class="fragment">Manage Self</li>
+					<li class="fragment">Engergize Others</li>
+					<li class="fragment">Intervene Skillfully</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Results</h2>
+			</section>
+			<section>
+				<h2>Situation</h2>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
