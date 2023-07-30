@@ -6,6 +6,6 @@ This repository hosts the deck for my presentation with SEL.
 
 --- 
 <div align="center">
-  <p>reveal.js is<p><br />
+  <p>reveal.js is<p>
   <p>mit licensed | copyright © 2011-2023 hakim el hattab, https://hakim.se</p>
 </div>
